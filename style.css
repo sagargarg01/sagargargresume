@@ -44,23 +44,27 @@ nav{
 }
 
 .list-popup{
-    display: none;
     position: fixed;
     z-index: 3; /* Sit on top */
-    left: 0;
+    left: -100%;
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background: none;
+    opacity: 0;
+    transition: left 0.4s, opacity 0.4s;
+}
+
+.show {
+    left: 0px;
+    opacity: 1;
 }
 
 .popup-content{
-    display: none;
     background-color: rgba(48, 48, 48, 0.945);
     border: 1px solid #888;
-    height: 100vh;
-    width: 40%;
+    height: 99vh;
+    width: 60%;
 }
 
 .navigation{
@@ -101,6 +105,7 @@ nav{
     font-size: 24px;
     font-weight: bold;
 }
+
 
 .close:hover,
 .close:focus {
@@ -692,6 +697,27 @@ button:focus {
 }
 
 
+@media only screen and (max-width: 400px) {
+
+
+    .popup-content{
+        width:60%;
+    }
+
+    .inside-popup a {
+        font-size: 18px;
+    }
+
+    .navigation{
+        margin-top: 100px;
+        padding: 20px;
+    }
+
+} 
+
+
+
+
 @media only screen and (max-width: 572px) {
     
     .timeline-box {
@@ -703,18 +729,9 @@ button:focus {
         display: block;
     }
 
-    .list-popup{
-        background:  rgba(0,0,0,0.4); /* Black w/ opacity */;
-    }
-
     .bar {
         width: 100%;
-      }
-
-    .popup-content{
-        display: block;
     }
-    
     
     .nav-menu {
         display: none;

@@ -3,17 +3,20 @@ var btn = document.getElementById("btn");
 var span = document.getElementsByClassName("close")[0];
 
 btn.onclick = function() {
-  modal.style.display = "block";
+  modal.classList.add('show');
+  document.body.style.overflow = "hidden";
 }
 
 span.onclick = function() {
-  modal.style.display = "none";
+  modal.classList.remove('show');
+  document.body.style.overflow = "scroll";
 }
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == modal) {
-    modal.style.display = "none";
+    modal.classList.remove('show');
+    document.body.style.overflow = "scroll";
   }
 }
 
