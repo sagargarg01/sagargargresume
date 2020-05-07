@@ -707,6 +707,10 @@ button:focus {
         background:  rgba(0,0,0,0.4); /* Black w/ opacity */;
     }
 
+    .bar {
+        width: 100%;
+      }
+
     .popup-content{
         display: block;
     }
@@ -724,6 +728,11 @@ button:focus {
     .timeline-divider {
         left: 5%;
     }
+
+    .bar {
+        width: 92.5%;
+      }
+
 
     .timeline-box{
         left: 12% !important;
