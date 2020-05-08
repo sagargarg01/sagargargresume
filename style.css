@@ -63,7 +63,7 @@ nav{
 .popup-content{
     background-color: rgba(48, 48, 48, 0.945);
     border: 1px solid #888;
-    height: 99vh;
+    height: 99%;
     width: 60%;
 }
 
@@ -784,6 +784,17 @@ button:focus {
         margin: 10%;
     }
 
+}
+
+@media only screen and (max-width: 840px) {
+
+    .TA{
+        font-size: 20px;
+    }
+
+    .timeline-box:nth-child(2n)::after {
+        left: -9.5%;
+    }
 }
 
 @media only screen and (max-width: 380px) {
