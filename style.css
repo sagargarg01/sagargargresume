@@ -1,3 +1,8 @@
+
+html{
+    scroll-behavior: smooth;
+}
+
 body{
 	margin: 0px;
 	font-family: sans-serif;
@@ -63,8 +68,12 @@ nav{
 .popup-content{
     background-color: rgba(48, 48, 48, 0.945);
     border: 1px solid #888;
-    height: 99%;
-    width: 60%;
+    height: 100%;
+    width: 40%;
+}
+
+.list-popup::-webkit-scrollbar { 
+    display: none; 
 }
 
 .navigation{
@@ -337,6 +346,10 @@ section:nth-child(2n + 1){
     width: 100%;
 }
 
+.mait{
+   margin-top: -5px;
+}
+
 .timeline-divider {
     position: absolute;
     width: 0;
@@ -386,7 +399,7 @@ section:nth-child(2n + 1){
 }
 
 .text-align-justify {
-    text-align: justify;
+    text-align: start;
 }
 
 
@@ -701,6 +714,9 @@ button:focus {
 
 @media only screen and (max-width: 450px) {
 
+    .popup-content{
+        width: 60%;
+    }
 
     .WE{
         font-size: 35px !important;
