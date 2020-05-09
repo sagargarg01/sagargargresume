@@ -64,7 +64,8 @@ nav{
 .popup-content{
     background-color: rgba(48, 48, 48, 0.945);
     border: 1px solid #888;
-    height: 100%;
+    margin-top: 2px;
+    height: 99%;
     width: 40%;
 }
 
