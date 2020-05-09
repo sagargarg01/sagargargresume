@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 
 body{
 	margin: 0px;
@@ -64,8 +67,7 @@ nav{
 .popup-content{
     background-color: rgba(48, 48, 48, 0.945);
     border: 1px solid #888;
-    margin-top: 2px;
-    height: 99%;
+    height: 99.7%;
     width: 40%;
 }
 
