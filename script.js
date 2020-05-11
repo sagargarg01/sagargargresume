@@ -19,3 +19,10 @@ window.onclick = function(event) {
     document.body.style.overflow = "scroll";
   }
 }
+
+function loads(){
+  document.getElementById('loading').style.display = "none";
+  document.getElementById('nav').style.display = "block";
+}
+
+window.setTimeout(loads, 3000);
