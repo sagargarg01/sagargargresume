@@ -784,9 +784,9 @@ button:focus {
     width: 80%;
 }
 
-.fifty-percent {
+.seventy-percent {
     height: inherit;
-    width: 50%;
+    width: 70%;
 }
 
 
@@ -886,6 +886,17 @@ button:focus {
 
 }
 
+
+@media only screen and (max-width: 1024px) {
+
+    #my-image{
+        height: 15rem !important;
+        width: 15rem !important;
+        margin-top: -10vh !important;
+    }
+
+}
+
 @media only screen and (max-width: 840px) {
 
     .TA{
@@ -894,6 +905,12 @@ button:focus {
 
     .timeline-box:nth-child(2n)::after {
         left: -9.5%;
+    }
+
+    #my-image {
+        height: 12rem !important;
+        width: 12rem !important;
+        margin-top: -17vh !important;
     }
 }
 
@@ -905,6 +922,10 @@ button:focus {
 
     .timeline-box::after {
         left: -10% !important;
+    }
+
+    .bottom-icons{
+        font-size: small;
     }
 
 }

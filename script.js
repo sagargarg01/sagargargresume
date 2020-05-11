@@ -6,6 +6,10 @@
 window.onload = (event) => {
   console.log('page is fully loaded');
   document.getElementById('loading').classList.add('removeLoader');
+
+  setTimeout(() => {
+    document.getElementById('loading').style.display = 'none';
+  },2000 );
 };
 
 
