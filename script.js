@@ -1,3 +1,14 @@
+
+// setTimeout(() => {
+//   document.getElementById('loading').style.display = "none";
+// }, 3000);
+
+window.onload = (event) => {
+  console.log('page is fully loaded');
+  document.getElementById('loading').classList.add('removeLoader');
+};
+
+
 var modal = document.getElementById("popup");
 var btn = document.getElementById("btn");
 var span = document.getElementsByClassName("close")[0];
@@ -19,10 +30,3 @@ window.onclick = function(event) {
     document.body.style.overflow = "scroll";
   }
 }
-
-function loads(){
-  document.getElementById('loading').style.display = "none";
-  document.getElementById('nav').style.display = "block";
-}
-
-window.setTimeout(loads, 3000);
