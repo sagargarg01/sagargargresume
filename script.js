@@ -1,15 +1,21 @@
-
-// setTimeout(() => {
-//   document.getElementById('loading').style.display = "none";
-// }, 3000);
-
-window.onload = (event) => {
-  console.log('page is fully loaded');
+minimumLoading = () =>{
+  setTimeout(() => {
+    console.log('page is fully loaded');
   document.getElementById('loading').classList.add('removeLoader');
+  }, 4000);
+}
 
+remoevLoader = () =>{
   setTimeout(() => {
     document.getElementById('loading').style.display = 'none';
-  },2000 );
+  },5000 );
+}
+
+window.onload = (event) => {
+
+  minimumLoading();
+  remoevLoader();
+  
 };
 
 
