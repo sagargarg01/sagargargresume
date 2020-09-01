@@ -83,6 +83,7 @@ body{
 	margin: 0px;
 	font-family: sans-serif;
     font-size: 30px;
+    user-select: none;
 }
 
 body::-webkit-scrollbar { 
@@ -430,6 +431,7 @@ section:nth-child(2n + 1){
    margin-top: -5px;
 }
 
+
 .timeline-divider {
     position: absolute;
     width: 0;
@@ -438,6 +440,10 @@ section:nth-child(2n + 1){
     border: 1px dashed #0096fa6b;
     height: 73%;
     color: #433E3F;
+}
+
+.work-timeline-divider-height{
+    height: 59%;
 }
 
 .timeline-divider .timeline-traveller {
@@ -462,6 +468,10 @@ section:nth-child(2n + 1){
     color: #eb822d;
     font-weight: 400;
     font-size: 1.2rem;
+}
+
+.IEEE{
+    color: #09467c;
 }
 
 .experience-duration {
@@ -558,6 +568,7 @@ section:nth-child(2n + 1){
 
 #contact-container {
     display: flex;
+    justify-content: space-around;
 }
 
 #my-details-container {
@@ -572,7 +583,7 @@ section:nth-child(2n + 1){
 }
 
 #contact-form-container {
-    width: 50%;
+    width: 60%;
 }
 
 #my-details-container p {
@@ -707,6 +718,11 @@ section:nth-child(2n + 1){
     margin: 40px 10px 10px;
     padding: 10px 14px 20px 10px;
 
+}
+
+.contact-section-mail-link{
+    text-decoration: none;
+    color: #d9dcdd;
 }
 
 input:focus,
