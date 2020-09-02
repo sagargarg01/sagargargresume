@@ -1,7 +1,9 @@
-// Loader 
+// Loader
+var loader = true;
+
 minimumLoading = () =>{
+  document.body.style.overflow = "hidden";
   setTimeout(() => {
-    console.log('page is fully loaded');
   document.getElementById('loading').classList.add('removeLoader');
   }, 4000);
 }
@@ -9,6 +11,7 @@ minimumLoading = () =>{
 removeLoader = () =>{
   setTimeout(() => {
     document.getElementById('loading').style.display = 'none';
+    loader = false;
   },5000 );
 }
 
@@ -16,7 +19,7 @@ window.onload = (event) => {
 
   minimumLoading();
   removeLoader();
-  
+  document.body.style.overflow = "scroll";
 };
 // --------------------------------------------------------------------------------
 
@@ -87,3 +90,30 @@ $('form').submit(function(e){
     $('#SenderSubject').val('');
     $('#SenderMessage').val('');
 })
+
+
+//auto fill skills section ----------
+let skillsLoaded = false;
+
+$(window).scroll(function (event) {
+  var scroll = $(window).scrollTop();
+  console.log(scroll);
+   if((scroll > 550 && scroll < 1000) && (loader === false && skillsLoaded === false)){
+     skillsLoaded = true; 
+     $('.f85').addClass('eighty-five-percent');
+     $('.f80').addClass('eighty-percent');
+     $('.f70').addClass('seventy-percent');
+   }
+});
+
+$('.skillsLoading').click(function(){
+
+  setTimeout(() => {
+    $('.f85').addClass('eighty-five-percent');
+    $('.f80').addClass('eighty-percent');
+    $('.f70').addClass('seventy-percent');
+    skillsLoaded = true;
+  }, 1000);
+
+ 
+});

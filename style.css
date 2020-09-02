@@ -772,22 +772,27 @@ button:focus {
 
 .mb-blue {
     background-color: #2857a4;
+    width: 0;
 }
 
 .mb-orange {
     background-color: #ec4d1c;
+    width: 0;
 }
 
 .mb-teal {
     background-color: #0b8176;
+    width: 0;
 }
 
 .mb-light-purple {
     background-color: #93738c;
+    width: 0;
 }
 
 .mb-gold{
     background-color: rgb(0, 140, 255);
+    width: 0;
 }
 
 
@@ -812,6 +817,7 @@ button:focus {
 .eighty-five-percent {
     height: inherit;
     width: 85%;
+    animation: eighty-five 2s;
 }
 
 .eighty-percent {
@@ -864,6 +870,7 @@ button:focus {
 
     .bars {
         display: block;
+        margin-top: 5px;
     }
 
     .bar {
