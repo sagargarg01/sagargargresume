@@ -30,6 +30,7 @@
 			<i class="fas fa-bars"></i>
 		</div>
 
+		<!-- for mobile view -->
 		<div id="popup" class="list-popup">
 			<div class="popup-content" id="content">
 
@@ -57,15 +58,15 @@
 						<a href="#contact"><i class="far fa-address-card"></i>Contact</a>
 					</div>
 					
+					<button>
+						My Resume
+					</button>
 
 				</div>
 			</div>
-
-
-
-
 		</div>
 
+		<!-- For Laptop View -->
 		<ul class="no-list-style horizontal-list text-center nav-menu">
 			<li>
 				<a href="#"> Home </a>
@@ -89,6 +90,10 @@
 				<a href="#contact">Contact</a>
 			</li>
 		</ul>
+
+		<button class="resume_download">
+			My Resume
+		</button>
 
 	</nav>
 
@@ -260,27 +265,25 @@
 					</div>
 				</div>
 
-
-				<div class="timeline-box left ">
-					<div class="timeline-container">
+				<div class="timeline-box">
+					<div>
 						<div class="timeline-logo">
-							<img
-								src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000030_1550710829_ninjasicon.png">
+							<img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000030_1550710829_ninjasicon.png">
 						</div>
-						<h3 class="experience-designation m0 m-blue"> Teaching Assistant </h3>
+						<h3 class="experience-designation  m0 m-blue"> <span class="TA">Teaching Assistant</span>  </h3>
 						<h4 class="experience-company-name"> Coding Ninjas </h4>
-						<h5 class="experience-duration m0"> june 2020 - Oct 2020 </h5>
+						<h5 class="experience-duration m0"> June 2020 - Oct 2020 </h5>
 
-						<p class="experience-description text-align-justify"> 
+						<p class="experience-description text-align-justify">
 							• Taking doubt sessions on Full stack web Development. <br>
 							• Understanding code base of students and correcting their approach for different projects. <br>
 							• Monitoring the performance of students to make sure that they complete the lectures and
 							assignments on time. <br>
 							• Evaluating the projects of students including both Front-end and Back-end projects based
 							on the code quality and proper structure, etc.
-							 </p>
+						</p>
 					</div>
-				</div> 
+				</div>
 
 				<div class="timeline-divider work-timeline-divider-height">
 					<div class="timeline-traveller">
@@ -466,30 +469,26 @@
 					<form id="contact-form">
 
 						<div class="input-group">
-							<input id="input-name" name="name" type="text" required>
+							<input id="SenderName" name="name" type="text" required>
 							<span class="highlight"></span>
 							<span class="bar"></span>
-							<label>Your Name</label>
+							<label> Name</label>
 						</div>
 
 						<div class="input-group">
-							<input id="input-email" name="input-email" type="text" required>
+							<input id="SenderSubject" name="email" type="text" required>
 							<span class="highlight"></span>
 							<span class="bar"></span>
-							<label>Your Email</label>
+							<label>Subject</label>
 						</div>
 
 						<div class="input-group">
-							<textarea id="input-message" name="input-message" rows="2" cols="40" required></textarea>
+							<textarea id="SenderMessage" name="message" rows="2" cols="40" required></textarea>
 							<span class="highlight"></span>
 							<span class="bar"></span>
 							<label>Message</label>
 						</div>
-						<!-- <input id="input-name" name="name" type="text" placeholder="Your Name"><br>
-            			<input id="input-email" name="input-email" type="text" required placeholder="Your Email">
-            			<textarea id="input-message" name="input-message" rows="2" cols="40" placeholder="Message"></textarea>
-						-->
-						<button class="sub-btn" type="submit">SEND MESSAGE</button>
+						<button class="sub-btn" id="send-button" type="submit">SEND MESSAGE</button>
 					</form>
 				</div>
 				
@@ -504,12 +503,14 @@
 						<span>X-67 Budh Vihar phase-1 New Delhi-86, India</span>
 					</div>
 					<div class="my-details-info-container">
+						<a class="contact-section-mail-link otherLinks" href="tel:9711181457">
 						<i class="fas fa-mobile-alt"></i>
 						<span>9711181457</span>
+						</a>
 					</div>
 					<div class="my-details-info-container">
+						<a class="contact-section-mail-link otherLinks" href="mailto:sagargupta1417@gmail.com">
 						<i class="far fa-envelope"></i>
-						<a class="contact-section-mail-link" href="mailto:sagargupta1417@gmail.com">
 							<span>sagargupta1417@gmail.com</span>
 					   </a>
 					</div>

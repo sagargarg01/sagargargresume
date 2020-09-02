@@ -86,6 +86,15 @@ body{
     user-select: none;
 }
 
+a, button{
+    cursor: pointer;
+}
+
+img{
+    pointer-events: none;
+}
+
+
 body::-webkit-scrollbar { 
     display: none; 
 }
@@ -97,6 +106,22 @@ nav{
     z-index: 25;
     width: 100vw;
     background: linear-gradient(14deg, rgba(1, 4, 4, 0.678) 0%, rgba(42, 40, 50, 0.678) 100%);
+}
+
+.resume_download{
+    position: absolute;
+    top: 4.5px;
+    right: 15px;
+    background: transparent;
+    font-size: 0.8rem;
+    border: 2px solid white;
+    border-radius: 2px;
+    color: white;
+    font-family: sans-serif;
+    letter-spacing: 0.046875em;
+    line-height: 1;
+    padding: 0.8em 0.8em 0.78em;
+    text-transform: uppercase;
 }
 
 /*Body Header*/
@@ -443,7 +468,7 @@ section:nth-child(2n + 1){
 }
 
 .work-timeline-divider-height{
-    height: 59%;
+    height: 61%;
 }
 
 .timeline-divider .timeline-traveller {
@@ -563,7 +588,7 @@ section:nth-child(2n + 1){
 }
 
 #contact-form {
-    margin-left: 20%;
+    margin-left: 10%;
 }
 
 #contact-container {
@@ -614,7 +639,7 @@ section:nth-child(2n + 1){
 
 .input-group {
     position: relative;
-    margin: 40px 0 20px; 
+    margin: 30px 0 20px; 
 }
   
   input,textarea {
@@ -626,6 +651,10 @@ section:nth-child(2n + 1){
     border-bottom: 1.5px solid white;
     width: 90%;
     color: white;
+  }
+
+  #SendersMessage{
+      white-space: pre-wrap;
   }
   
   label {
@@ -886,6 +915,10 @@ button:focus {
     .timeline-divider{
         height: 75% !important;
     }
+
+    .work-timeline-divider-height{
+        height: 59% !important;
+    }
 }
 
 
@@ -897,7 +930,7 @@ button:focus {
     }
 
     .bar {
-        width: 92.5%;
+        width: 95%;
       }
 
 
@@ -969,7 +1002,8 @@ button:focus {
     }
 
     .bottom-icons{
-        font-size: small;
+        display: flex;
+        flex-wrap: nowrap;
     }
 
 }
