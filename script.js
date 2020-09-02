@@ -97,7 +97,6 @@ let skillsLoaded = false;
 
 $(window).scroll(function (event) {
   var scroll = $(window).scrollTop();
-  console.log(scroll);
    if((scroll > 550 && scroll < 1000) && (loader === false && skillsLoaded === false)){
      skillsLoaded = true; 
      $('.f85').addClass('eighty-five-percent');
@@ -108,12 +107,13 @@ $(window).scroll(function (event) {
 
 $('.skillsLoading').click(function(){
 
-  setTimeout(() => {
-    $('.f85').addClass('eighty-five-percent');
-    $('.f80').addClass('eighty-percent');
-    $('.f70').addClass('seventy-percent');
-    skillsLoaded = true;
-  }, 1000);
-
+  if(skillsLoaded === false){
+    setTimeout(() => {
+      $('.f85').addClass('eighty-five-percent');
+      $('.f80').addClass('eighty-percent');
+      $('.f70').addClass('seventy-percent');
+      skillsLoaded = true;
+    }, 1000);
+  }
  
 });
