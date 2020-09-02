@@ -61,7 +61,7 @@ $(function(){
       $(this).attr("hiddenhref", href);
       $(this).removeAttr("href");
   });
-  $(".social-icons a").click(function(){
+  $(".social-icons a, .resume").click(function(){
       url = $(this).attr("hiddenhref");
       window.open(url, '_blank');
   })
