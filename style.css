@@ -90,10 +90,6 @@ a, button{
     cursor: pointer;
 }
 
-img{
-    pointer-events: none;
-}
-
 
 body::-webkit-scrollbar { 
     display: none; 
