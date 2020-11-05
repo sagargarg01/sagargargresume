@@ -169,7 +169,7 @@ const turnOnLaptop = () => {
 }
 
 setTimeout(() => {
-  if (position.top > 50 && position.top < 150) {
+  if (position.top > 0 && position.top < 200) {
     turnOnLaptop()
   }
 }, 5000)
