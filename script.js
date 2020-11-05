@@ -114,7 +114,7 @@ $(window).scroll(function (event) {
     $('.f70').addClass('seventy-percent')
   }
 
-  if (scroll > 3200 && scroll < 3500 && loader === false) {
+  if (scroll > 2500 && scroll < 3000 && loader === false) {
     turnOnLaptop()
   }
 })
