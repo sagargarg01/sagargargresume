@@ -137,7 +137,7 @@ $('.skillsLoading').on('click', function () {
 
 // ----------------------------------------------------------------------
 // projects
-var projects = ['ipod', 'descode', 'todo', 'netflix']
+var projects = ['ipod', 'descode', 'netflix']
 let pid = 0
 var laptopOn = false
 
