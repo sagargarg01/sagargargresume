@@ -8,20 +8,20 @@
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
 		integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-		
+
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<title>Sagar Garg</title>
 </head>
 
 <body>
 
-	<div class="loader-bg" id="loading"> 
-		
+	<div class="loader-bg" id="loading">
+
 			<div class="loader" id="loader"></div>
 			<div class="loader" id="loader2"></div>
-			<div class="loader" id="loader3"></div> 
-			 <div class="loader" id="loader4"></div> 
-				
+			<div class="loader" id="loader3"></div>
+			 <div class="loader" id="loader4"></div>
+
 			<span id="text">LOADING...</span><br>
 	</div>
 
@@ -146,11 +146,11 @@
 				<img src="myself.jpg">
 			</div>
 			<p>
-				I am a coding enthusiast proficient in Data Structures and Algorithms and 
-				<span class="text-highlight">Full Stack Web Development</span> in Node.js. 
-				Innovative optimized solution seeker. Excited to be at the Development phase 
+				I am a coding enthusiast proficient in Data Structures and Algorithms and
+				<span class="text-highlight">Full Stack Web Development</span> in Node.js.
+				Innovative optimized solution seeker. Excited to be at the Development phase
 				of my career as a web developer. Possess a strong attention to detail,
-				<span class="text-highlight">well-developed time management skills </span>, 
+				<span class="text-highlight">well-developed time management skills </span>,
 				and ability to complete all projects within schedule and in a timely manner
 			</p>
 		</section>
@@ -166,14 +166,7 @@
 			<div class="skills-display">
 
 				<div class="skill-progress">
-					<div class="mb-blue f85">
-						<div class="skill-name" >
-							<span>Java</span>
-						</div>
-					</div>
-				</div>
-				<div class="skill-progress">
-					<div class="mb-orange f85"> 
+					<div class="mb-orange f85">
 						<div class="skill-name">
 							<span> HTML </span>
 						</div>
@@ -190,6 +183,13 @@
 					<div class="mb-light-purple f80">
 						<div class="skill-name">
 							<span> Javascript </span>
+						</div>
+					</div>
+				</div>
+					<div class="skill-progress">
+					<div class="mb-orange f85">
+						<div class="skill-name" >
+							<span>ReactJs</span>
 						</div>
 					</div>
 				</div>
@@ -211,7 +211,7 @@
 				<div class="skill-progress">
 					<div class="mb-blue f70" id="node">
 						<div class="skill-name">
-							<span> Express </span>
+							<span> ExpressJs </span>
 						</div>
 					</div>
 				</div>
@@ -241,7 +241,7 @@
 						<h3 class="experience-designation  m0 m-blue"> Web-Developer Coordinator </h3>
 						<h4 class="experience-company-name IEEE"> IEEE MAIT </h4>
 						<h5 class="experience-duration m0"> Jan 2020 - Present </h5>
-						<p class="experience-description text-align-justify"> 
+						<p class="experience-description text-align-justify">
 							• Website management: Keeping the website of IEEE MAIT updated <br>
 							• New Websites: Creating new websites for different events in society </p>
 					</div>
@@ -316,9 +316,9 @@
 						<h4 class="experience-company-name "> Maharaja Agrasen Institute Of Technology </h4>
 						<h5 class="experience-duration m0"> Aug 2018 - Aug 2022 </h5>
 
-						<p class="experience-description text-align-justify"> Bachelor Of Technology in Electronic and 
+						<p class="experience-description text-align-justify"> Bachelor Of Technology in Electronic and
 							Communication Department from Maharaja Agrasen Institute Of Technology.The electronics part
-							deals with a wide array of subjects such as electrical circuit theory, semiconductors , and circuit design. 
+							deals with a wide array of subjects such as electrical circuit theory, semiconductors , and circuit design.
 							Communications will broadly take you through Signal Processing, Electromagnetics , Antenna Theory </p>
 					</div>
 				</div>
@@ -379,8 +379,8 @@
 						<div class="browser-container none">
 							<img src="projects/BrowserHeader.jpg" class="browser-header" alt="">
 							<div class="browser-area">
-								<video playsinline autoplay muted loop>
-									<source src="projects/ipod.mp4" type="video/mp4"> 
+								<video playsinline autoplay muted loop id="player">
+									<source src="projects/ipod.mp4" type="video/mp4" id="source">
 								</video>
 							</div>
 						</div>
@@ -391,31 +391,32 @@
 				</div>
 
 				<div class="project-list">
-					<div class="project">
-						<h3 class="p-title">Descode.co</h3>
-							<a href="http://" target="_blank" rel="noopener" class="visit none">
-								<h3>Visit</h3>
-								<img src="projects/link.svg" alt="link">
-							</a>
-						</div>
 
-						<div class="project">
+						<div class="project" data-id="0">
 						<h3 class="p-title">iPod Classic.js</h3>
-							<a href="http://" target="_blank" rel="noopener" class="visit none">
+							<a href="https://sagargarg01.github.io/iPod-classic-project/" target="_blank" rel="noopener" class="visit none pLinks">
 								<h3>Visit</h3>
 								<img src="projects/link.svg" alt="link">
 							</a>
 						</div>
 
-							<div class="project">
+							<div class="project" data-id="1">
+						<h3 class="p-title">Descode.co</h3>
+							<a href="http://descode.co" target="_blank" rel="noopener" class="visit none pLinks">
+								<h3>Visit</h3>
+								<img src="projects/link.svg" alt="link">
+							</a>
+						</div>
+
+							<!-- <div class="project" data-id="2">
 						<h3 class="p-title">To-Do List</h3>
 							<a href="http://" target="_blank" rel="noopener" class="visit none">
 								<h3>Visit</h3>
 								<img src="projects/link.svg" alt="link">
 							</a>
-						</div>
+						 </div> -->
 
-							<div class="project">
+							<div class="project" data-id="2">
 						<h3 class="p-title">Netflix Clone.js</h3>
 							<a href="http://" target="_blank" rel="noopener" class="visit none">
 								<h3>Visit</h3>
@@ -462,7 +463,7 @@
 						<button class="sub-btn" id="send-button" type="submit">SEND MESSAGE</button>
 					</form>
 				</div>
-				
+
 				<div id="my-details-container">
 
 					<h3> Get In touch </h3>

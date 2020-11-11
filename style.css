@@ -1038,6 +1038,14 @@ button:focus {
 }
 
 @media only screen and (max-width: 572px) {
+  #portfolio-container {
+    padding: 0px;
+  }
+
+  .project-list {
+    padding: 0px 20px;
+  }
+
   .timeline-box {
     width: 100%;
     left: 10% !important;
@@ -1066,6 +1074,12 @@ button:focus {
 }
 
 @media only screen and (max-width: 768px) {
+  .display {
+    margin-bottom: 5vh;
+    width: 375px;
+    height: 217px;
+  }
+
   .timeline-divider {
     left: 5%;
   }

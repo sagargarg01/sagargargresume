@@ -67,7 +67,7 @@ $(function () {
     $(this).attr('hiddenhref', href)
     $(this).removeAttr('href')
   })
-  $('.social-icons a, .resume').click(function () {
+  $('.social-icons a, .resume, .pLinks').click(function () {
     url = $(this).attr('hiddenhref')
     window.open(url, '_blank')
   })
@@ -79,7 +79,7 @@ $(function () {
 // --------------------------------------------------------------------------------
 
 //submit form
-$('form').submit(function (e) {
+$('form').on('submit', function (e) {
   e.preventDefault()
   let name = $('#SenderName').val()
   let subject = $('#SenderSubject').val()
@@ -100,7 +100,7 @@ $('form').submit(function (e) {
 //auto fill skills section ----------
 let skillsLoaded = false
 
-$(window).scroll(function (event) {
+$(window).on('scroll', function (event) {
   var scroll = $(window).scrollTop()
   if (
     scroll > 550 &&
@@ -114,12 +114,17 @@ $(window).scroll(function (event) {
     $('.f70').addClass('seventy-percent')
   }
 
-  if (scroll > 2500 && scroll < 3000 && loader === false) {
+  if (
+    scroll > 2500 &&
+    scroll < 3000 &&
+    loader === false &&
+    laptopOn === false
+  ) {
     turnOnLaptop()
   }
 })
 
-$('.skillsLoading').click(function () {
+$('.skillsLoading').on('click', function () {
   if (skillsLoaded === false) {
     setTimeout(() => {
       $('.f85').addClass('eighty-five-percent')
@@ -132,6 +137,10 @@ $('.skillsLoading').click(function () {
 
 // ----------------------------------------------------------------------
 // projects
+var projects = ['ipod', 'descode', 'todo', 'netflix']
+let pid = 0
+var laptopOn = false
+
 let position = document
   .getElementsByClassName('display')[0]
   .getBoundingClientRect()
@@ -139,11 +148,25 @@ let position = document
 $('.project').each(function () {
   const self = this
 
-  $(self).click(function () {
+  $(self).on('click', function () {
     removePreviousProperty()
     addnewProperty($(this).children()[1], self)
+    loadNewVideo(self)
   })
 })
+
+const loadNewVideo = (self) => {
+  let index = parseInt($(self).attr('data-id'))
+  if (pid === index) return
+  else pid = index
+  let video = document.getElementById('player')
+  let source = document.getElementById('source')
+
+  video.pause()
+  source.removeAttribute('src')
+  source.setAttribute('src', `projects/${projects[index]}.mp4`)
+  video.load()
+}
 
 const addnewProperty = (children, self) => {
   $(children).removeClass('none')
@@ -156,6 +179,7 @@ const removePreviousProperty = () => {
 }
 
 const turnOnLaptop = () => {
+  laptopOn = true
   setTimeout(() => {
     $('.screen').addClass('fadeIn')
     setTimeout(() => {
@@ -163,6 +187,8 @@ const turnOnLaptop = () => {
       setTimeout(() => {
         $('.browser-container').addClass('b-fadeIn')
         $('.browser-container').removeClass('none')
+        $('.project:first-child a').removeClass('none')
+        $('.project:first-child').addClass('left-border')
       }, 1200)
     }, 1000)
   }, 1000)
