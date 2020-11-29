@@ -149,9 +149,9 @@ $('.project').each(function () {
   const self = this
 
   $(self).on('click', function () {
+    loadNewVideo(self)
     removePreviousProperty()
     addnewProperty($(this).children()[1], self)
-    loadNewVideo(self)
   })
 })
 
